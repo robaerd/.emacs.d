@@ -7,11 +7,6 @@
   (setq package-user-dir versioned-package-dir))
 
 
-
-;;(add-to-list 'package-archives
-;;         '("marmalade" . "http://marmalade-repo.org/packages/")
-;;         '("melpa" . "http://melpa.milkbox.net/packages/"))
-
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
                          ("melpa" . "http://melpa.milkbox.net/packages/")))
@@ -22,7 +17,7 @@
 (require 'cl-lib)
 
 ;;Author: purcell
-; taken and changed from his emacs.d/lisp/init-elpa.el
+; taken and modified from his emacs.d/lisp/init-elpa.el
 (defun get-package (package &optional min-version no-refresh)
   "Install given PACKAGE, optionally requiring MIN-VERSION.
 If NO-REFRESH is non-nil, the available package lists will not be

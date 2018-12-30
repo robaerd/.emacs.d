@@ -55,4 +55,9 @@ custom.el
 #automatic generated recentf file
 recentf
 
-./emacs.d
+#bug in my terminal emacs (creates another .emacs.d inside emacs.d directory)
+.emacs.d/
+
+#projectile
+projectile*
+

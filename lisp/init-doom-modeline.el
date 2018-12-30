@@ -8,7 +8,7 @@
 
 
 ;; How tall the mode-line should be (only respected in GUI Emacs).
-(setq doom-modeline-height 25)
+(setq doom-modeline-height 22)
 
 ;; How wide the mode-line bar should be (only respected in GUI Emacs).
 (setq doom-modeline-bar-width 3)
@@ -46,7 +46,7 @@
 (setq doom-modeline-major-mode-color-icon t)
 
 ;; Whether display minor modes or not. Non-nil to display in mode-line.
-(setq doom-modeline-minor-modes nil)
+(setq doom-modeline-minor-modes t)
 
 ;; Whether display perspective name or not. Non-nil to display in mode-line.
 (setq doom-modeline-persp-name t)
