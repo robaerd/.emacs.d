@@ -3,14 +3,19 @@
 ;; prevent bytecode incompatibility of packages after emacs update. Packages are installed into seperate dir for each version
 (let ((versioned-package-dir
        (expand-file-name (format "elpa-%s.%s" emacs-major-version emacs-minor-version)
-                         ".emacs.d")))
+                         ".emacs.d/")))
   (setq package-user-dir versioned-package-dir))
 
 
 
-(add-to-list 'package-archives
-         '("marmalade" . "http://marmalade-repo.org/packages/")
-         '("melpa" . "http://melpa.milkbox.net/packages/"))
+;;(add-to-list 'package-archives
+;;         '("marmalade" . "http://marmalade-repo.org/packages/")
+;;         '("melpa" . "http://melpa.milkbox.net/packages/"))
+
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                         ("marmalade" . "http://marmalade-repo.org/packages/")
+                         ("melpa" . "http://melpa.milkbox.net/packages/")))
+         
 
 (package-initialize)
 
