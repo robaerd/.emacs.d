@@ -1,13 +1,10 @@
 (unless (package-installed-p 'doom-modeline)
-    (all-the-icons-install-fonts))
+    (all-the-icons-install-fonts t))
 
 (get-package 'doom-modeline)
 (doom-modeline-init)
 
 
-
-
-;;(all-the-icons-install-fonts)
 
 
 ;; How tall the mode-line should be (only respected in GUI Emacs).
@@ -46,7 +43,7 @@
 (setq doom-modeline-major-mode-icon t)
 
 ;; Display color icons for `major-mode'. It respects `all-the-icons-color-icons'.
-(setq doom-modeline-major-mode-color-icon nil)
+(setq doom-modeline-major-mode-color-icon t)
 
 ;; Whether display minor modes or not. Non-nil to display in mode-line.
 (setq doom-modeline-minor-modes nil)

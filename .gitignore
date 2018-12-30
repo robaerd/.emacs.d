@@ -51,3 +51,8 @@ flycheck_*.el
 
 #custom user config
 custom.el
+
+#automatic generated recentf file
+recentf
+
+./emacs.d
