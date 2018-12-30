@@ -46,6 +46,7 @@
 (require 'init-editing-visuals)
 (require 'init-projectile) ; keybindings: S-(d | f | g | p)
 (require 'init-zygospore) ; focuse on current buffer (delete all other) + revert with C-x 1
+(require 'init-autocompletion)
 
 
 
