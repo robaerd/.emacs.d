@@ -19,6 +19,8 @@
 (x-focus-frame nil) ; for emacs in terminal
 
 
+(get-package 'use-package)
+
 ;; few commands are bound to the counsel package
 ; if not installed, commands like find file or swiper will not work 
 (get-package 'counsel)
@@ -46,7 +48,7 @@
 (require 'init-editing-visuals)
 (require 'init-projectile) ; keybindings: S-(d | f | g | p)
 (require 'init-zygospore) ; focuse on current buffer (delete all other) + revert with C-x 1
-(require 'init-autocompletion)
+(require 'c-cpp-opjc-mode)
 
 
 

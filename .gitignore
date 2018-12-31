@@ -61,3 +61,8 @@ recentf
 #projectile
 projectile*
 
+#autocompletion
+irony/
+semanticdb/
+ede-projects.el
+
