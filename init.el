@@ -1,5 +1,5 @@
 
-;(setq debug-on-error t)
+(setq debug-on-error t)
 
 
 (defconst *spell-check-support-enabled* nil) ;; Enable with t if you prefer
@@ -10,7 +10,8 @@
 
 
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
-(setq custom-file (expand-file-name "custom.el" "~/.emacs.d/"))
+;(setq custom-file (expand-file-name "custom.el" "~/.emacs.d/"))
+(setq custom-file (expand-file-name "~/.emacs.d/custom.el"))
 
 
 (require 'init-load-path)
@@ -29,6 +30,11 @@
 ;----------------------------------------------------------------------------------------
 ;;other modes
 (global-linum-mode t) ; linenumbers globally
+
+;; PATHS
+; path of haskell-stack
+;replace with your current path
+(add-to-list 'exec-path "/usr/local/Cellar/haskell-stack/1.9.3/bin/")
 
 ;;customization
 (require 'init-doom-themes)
@@ -49,6 +55,7 @@
 (require 'init-projectile) ; keybindings: S-(d | f | g | p)
 (require 'init-zygospore) ; focuse on current buffer (delete all other) + revert with C-x 1
 (require 'c-cpp-opjc-mode)
+(require 'haskell-mode)
 
 
 
