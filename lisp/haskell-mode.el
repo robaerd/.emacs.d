@@ -89,4 +89,3 @@
 
 
 (provide 'haskell-mode)
-;;; init-haskell.el ends here

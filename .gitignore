@@ -66,3 +66,7 @@ irony/
 semanticdb/
 ede-projects.el
 
+#spotify
+spotify/
+config-spotify.el
+

@@ -40,15 +40,6 @@
 (require 'init-doom-themes)
 (require 'init-doom-modeline)
 
-;; some small features
-(require 'init-google)
-(require 'init-terminal)
-(require 'init-sudo-edit)
-(require 'init-words)
-(require 'init-delete-current-buffer-file)
-(require 'init-mode-line) 
-
-
 ;;important features
 (require 'init-swiper)
 (require 'init-editing-visuals)
@@ -56,6 +47,18 @@
 (require 'init-zygospore) ; focuse on current buffer (delete all other) + revert with C-x 1
 (require 'c-cpp-opjc-mode)
 (require 'haskell-mode)
+(require 'init-magit)
+
+;; some small features
+(require 'init-google)
+(require 'init-terminal)
+(require 'init-sudo-edit)
+(require 'init-words)
+(require 'init-delete-current-buffer-file)
+(require 'init-mode-line) 
+(require 'init-spotify)
+
+
 
 
 
