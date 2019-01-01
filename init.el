@@ -48,6 +48,9 @@
 (require 'c-cpp-opjc-mode)
 (require 'haskell-mode)
 (require 'init-magit)
+(require 'init-smartparens)
+(require 'init-ibuffer)
+(require 'init-windows)
 
 ;; some small features
 (require 'init-google)

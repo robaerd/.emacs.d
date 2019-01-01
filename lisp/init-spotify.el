@@ -2,8 +2,7 @@
 	(make-directory "~/.emacs.d/spotify")
     (magit-clone "https://github.com/danielfm/spotify.el" "~/.emacs.d/spotify"))
 
-;(magit-clone "https://github.com/danielfm/spotify.el" "~/.emacs.d/spotify")
-;(magit-pull-from-upstream "~/.emacs.d/spotify") ; git pulls every startup of emacs
+
 
 (add-to-list 'load-path "~/.emacs.d/spotify")
 (require 'spotify)

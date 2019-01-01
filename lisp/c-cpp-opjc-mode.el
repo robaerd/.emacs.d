@@ -1,7 +1,5 @@
-;; irony server
-(unless (package-installed-p 'irony)
-    (irony-install-server t))
-
+;; dont forget to install irony-server-mode
+;;;;;;;; (irony-install-server) ;;;;;;;;;;;
 ;; == irony-mode ==
 (use-package irony
   :ensure t
@@ -59,8 +57,9 @@
 ;  '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
 
 
-;; == eldec-mode ==
-(add-hook 'irony-mode-hook 'irony-eldoc)
+;; == eldoc-mode ==
+(get-package 'irony-eldoc)
+(add-hook 'irony-mode-hook #'irony-eldoc)
 
 
 ;;;  bind TAB for indent-or-complete
