@@ -19,7 +19,7 @@
 (require 'init-exec-path)
 (x-focus-frame nil) ; for emacs in terminal
 
-
+(require 'init-async)
 (get-package 'use-package)
 
 ;; few commands are bound to the counsel package
@@ -51,6 +51,7 @@
 (require 'init-smartparens)
 (require 'init-ibuffer)
 (require 'init-windows)
+(require 'init-helm)
 
 ;; some small features
 (require 'init-google)
