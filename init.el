@@ -52,6 +52,7 @@
 (require 'init-ibuffer)
 (require 'init-windows)
 (require 'init-helm)
+(require 'init-avy)
 
 ;; some small features
 (require 'init-google)
