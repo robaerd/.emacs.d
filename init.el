@@ -29,8 +29,9 @@
 (require 'init-exec-path)
 ;(x-focus-frame nil) ; for emacs in terminal ; breaks terminal emacs?!?!
 
-(require 'init-async)
+
 (get-package 'use-package)
+(require 'init-async)
 
 
 

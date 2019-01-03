@@ -5,13 +5,15 @@
  ;      (expand-file-name (format "elpa-%s.%s" emacs-major-version emacs-minor-version)
   ;                       ".")))
   ;(setq package-user-dir versioned-package-dir))
-
+(setq package-user-dir "~/.emacs.d/elpa")
+;(add-to-list 'load-path package-user-dir)
 
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
                          ("melpa" . "http://melpa.milkbox.net/packages/")))
          
 
+(when (version< emacs-version "27.0") (package-initialize))
 (unless package--initialized (package-initialize t))
 
 (require 'cl-lib)
