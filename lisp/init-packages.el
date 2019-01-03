@@ -3,7 +3,7 @@
 ;; prevent bytecode incompatibility of packages after emacs update. Packages are installed into seperate dir for each version
 (let ((versioned-package-dir
        (expand-file-name (format "elpa-%s.%s" emacs-major-version emacs-minor-version)
-                         ".emacs.d/")))
+                         ".")))
   (setq package-user-dir versioned-package-dir))
 
 
