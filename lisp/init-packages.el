@@ -12,7 +12,7 @@
                          ("melpa" . "http://melpa.milkbox.net/packages/")))
          
 
-(package-initialize)
+(unless package--initialized (package-initialize t))
 
 (require 'cl-lib)
 
