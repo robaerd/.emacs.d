@@ -1,10 +1,10 @@
 (require 'package)
 
 ;; prevent bytecode incompatibility of packages after emacs update. Packages are installed into seperate dir for each version
-(let ((versioned-package-dir
-       (expand-file-name (format "elpa-%s.%s" emacs-major-version emacs-minor-version)
-                         ".")))
-  (setq package-user-dir versioned-package-dir))
+;(let ((versioned-package-dir
+ ;      (expand-file-name (format "elpa-%s.%s" emacs-major-version emacs-minor-version)
+  ;                       ".")))
+  ;(setq package-user-dir versioned-package-dir))
 
 
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")

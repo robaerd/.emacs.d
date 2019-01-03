@@ -48,9 +48,9 @@
             (apply oldfun args))))
       (advice-add 'hindent--before-save :around 'sanityinc/hindent--before-save-wrapper))))
 
-(with-eval-after-load 'haskell-mode
-  (define-key haskell-mode-map (kbd "C-c h") 'hoogle)
-  (define-key haskell-mode-map (kbd "C-o") 'open-line))
+;(with-eval-after-load 'haskell-mode
+  ;(define-key haskell-mode-map (kbd "C-c h") 'hoogle)
+  ;(define-key haskell-mode-map (kbd "C-o") 'open-line))
 
 
 (with-eval-after-load 'page-break-lines
