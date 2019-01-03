@@ -12,6 +12,9 @@
 (defconst *spell-check-support-enabled* nil) ;; Enable with t if you prefer
 (defconst *is-a-mac* (eq system-type 'darwin))
 
+(when (string= system-type "darwin")
+  (setq dired-use-ls-dired nil))
+
 ;; set Super key to FN
 (setq ns-function-modifier 'super)  ; make Fn key do Hyper
 
@@ -24,10 +27,12 @@
 (require 'init-load-path)
 (require 'init-packages)
 (require 'init-exec-path)
-(x-focus-frame nil) ; for emacs in terminal
+;(x-focus-frame nil) ; for emacs in terminal ; breaks terminal emacs?!?!
 
 (require 'init-async)
 (get-package 'use-package)
+
+
 
 ;; few commands are bound to the counsel package
 ; if not installed, commands like find file or swiper will not work 
@@ -67,7 +72,7 @@
 (require 'init-sudo-edit)
 (require 'init-words)
 (require 'init-delete-current-buffer-file)
-(require 'init-mode-line) 
+(require 'init-mode-line)
 (require 'init-spotify)
 
 
