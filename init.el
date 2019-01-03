@@ -20,8 +20,11 @@
 
 
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
-;(setq custom-file (expand-file-name "custom.el" "~/.emacs.d/"))
 (setq custom-file (expand-file-name "~/.emacs.d/custom.el"))
+
+;;; default find file search path
+;; currently reassignes in my custom.el
+(setq default-directory "~/")
 
 
 (require 'init-load-path)
@@ -83,6 +86,10 @@
 
 ;----------------------------------------------------------------------------------------
 
+
+;; Variables configured via the interactive 'customize' interface
+(when (file-exists-p custom-file)
+  (load custom-file))
 
 
 
