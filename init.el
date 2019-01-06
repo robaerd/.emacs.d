@@ -77,7 +77,7 @@
 (require 'init-words)
 (require 'init-delete-current-buffer-file)
 (require 'init-mode-line)
-(require 'init-spotify)
+
 
 
 
