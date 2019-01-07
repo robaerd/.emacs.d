@@ -12,6 +12,19 @@
 (defconst *spell-check-support-enabled* nil) ;; Enable with t if you prefer
 (defconst *is-a-mac* (eq system-type 'darwin))
 
+;; in case of german keyboard layout
+(if (eq system-type 'darwin)
+  (progn
+    ;; "fix" the broken keyboard
+    (global-set-key "\M-l" '(lambda () (interactive) (insert "@")))
+    (global-set-key "\M-5" '(lambda () (interactive) (insert "[")))
+    (global-set-key "\M-6" '(lambda () (interactive) (insert "]")))
+    (global-set-key "\M-7" '(lambda () (interactive) (insert "|")))
+    (global-set-key "\M-/" '(lambda () (interactive) (insert "\\")))
+    (global-set-key "\M-8" '(lambda () (interactive) (insert "{")))
+    (global-set-key "\M-9" '(lambda () (interactive) (insert "}")))
+    (global-set-key "\M-n" '(lambda () (interactive) (insert "~")))))
+
 (when (string= system-type "darwin")
   (setq dired-use-ls-dired nil))
 

@@ -11,6 +11,7 @@
   (smartparens-global-mode)
   :config
   (require 'smartparens-config)
+  (sp-pair "'" "'" :actions '(wrap insert))
   (add-hook 'eval-expression-minibuffer-setup-hook #'smartparens-mode)
   (custom-set-variables
    '(sp-base-key-bindings 'sp)
@@ -53,10 +54,13 @@
     (sp-local-pair "=" "=" :unless '(sp-point-after-word-p sp--org-inside-LaTeX))
     (sp-local-pair "\\[" "\\]")))
 
+;; resolves wrong insertion of single quotes 
+;(setq-default sp-escape-quotes-after-inser nil)
+
 ; enable in c/cpp/objc mode
 ; 	normal mode would be #'smartparens-mode
 ; 	You may want to try smartparens-strict-mode. 
 ; 	This enforces that pairs are always balanced, so commands like kill-line keep your code well-formed.
-(add-hook 'c-mode-common-hook #'smartparens-strict-mode) 
+(add-hook 'c-mode-common-hook #'smartparens-mode) 
 
 (provide 'init-smartparens)
