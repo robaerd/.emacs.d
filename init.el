@@ -62,7 +62,7 @@
 (require 'init-projectile) ; keybindings: S-(d | f | g | p)
 (require 'init-zygospore) ; focuse on current buffer (delete all other) + revert with C-x 1
 (require 'c-cpp-opjc-mode)
-(require 'haskell-mode)
+(require 'init-haskell-mode)
 (require 'init-magit)
 (require 'init-smartparens)
 (require 'init-ibuffer)
