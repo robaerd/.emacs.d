@@ -23,6 +23,7 @@
     (global-set-key "\M-/" '(lambda () (interactive) (insert "\\")))
     (global-set-key "\M-8" '(lambda () (interactive) (insert "{")))
     (global-set-key "\M-9" '(lambda () (interactive) (insert "}")))
+    (global-set-key "\C-^" '(lambda () (interactive) (insert "~")))
     (global-set-key "\M-n" '(lambda () (interactive) (insert "~")))))
 
 (when (string= system-type "darwin")
@@ -64,10 +65,16 @@
 ; path of haskell-stack
 ;replace with your current path
 (add-to-list 'exec-path "/usr/local/Cellar/haskell-stack/1.9.3/bin/")
+;; custom path to pandoc executable - from brew
+;; change to your correct path
+(defvar pandoc-path "/usr/local/Cellar/pandoc/2.5/bin/pandoc")
 
 ;;customization
 (require 'init-doom-themes)
 (require 'init-doom-modeline)
+
+;; language modes
+(require 'init-markdown-mode)
 
 ;;important features
 (require 'init-swiper)
@@ -82,6 +89,7 @@
 (require 'init-windows)
 (require 'init-helm)
 (require 'init-avy)
+(require 'init-aggressive-indent)
 
 ;; some small features
 (require 'init-google)
@@ -90,6 +98,7 @@
 (require 'init-words)
 (require 'init-delete-current-buffer-file)
 (require 'init-mode-line)
+(require 'init-undotree)
 
 
 

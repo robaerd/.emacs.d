@@ -22,6 +22,10 @@
 ;; Do not use values larger than 50 for better compatibility across endpoints
 (setq spotify-api-search-limit 50)
 
+(setq spotify-mode-line-paused-text "PS")
+(setq spotify-mode-line-playing-text "PL")
+(setq spotify-mode-line-truncate-length 12) ; default: 15
+
 (global-spotify-remote-mode t)
 
 (provide 'init-spotify)

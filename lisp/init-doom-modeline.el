@@ -51,7 +51,7 @@
 (setq doom-modeline-major-mode-color-icon t)
 
 ;; Whether display minor modes or not. Non-nil to display in mode-line.
-(setq doom-modeline-minor-modes t)
+(setq doom-modeline-minor-modes nil)
 
 ;; Whether display perspective name or not. Non-nil to display in mode-line.
 (setq doom-modeline-persp-name t)
