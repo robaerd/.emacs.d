@@ -15,34 +15,32 @@ This emacs config is properly configured for:
 
 
 ## Requirements
- - irony and irony-server<br/>
-   * Following packages need to be installed on your system:
+#### irony and irony-server<br/>
+- Following packages need to be installed on your system:
 	 * CMake >= 2.8.3
 	 * libclang
-   * To install irony-server and just type this in emacs:<br/>
+- To install irony-server and just type this in emacs:<br/>
 ~~~el
 M-x irony-install-server RET.		
 ~~~
 </br/>
 
-- stack (for intero - haskell development envirement)
-
-
-	For many Un*x operating systems, all you need to do is run:
+#### stack (for intero - haskell development envirement)
+For many Un*x operating systems, all you need to do is run:
 
 ``` sh
 curl -sSL https://get.haskellstack.org/ | sh
 ```
-- pandoc (Markdown renderer)
+#### pandoc (Markdown renderer)
 
-#### macOS:
+##### - macOS:
   The simpliest method to install an keeping pandoc up-to-date is using brew
   
   ```sh
    $ brew install pandoc
    $ brew install pandoc-citeproc
   ```
-#### Linux:
+##### - Linux:
   Pandoc is in the Debian, Ubuntu, Slackware, Arch, Fedora, NiXOS, openSUSE, and gentoo repositories.
   
 On Debian/Ubuntu: 
