@@ -10,11 +10,19 @@
 (size-indication-mode t)
 
 ;;; Percentage-buffer
-(defun goto-percent (pct)
-"Go to place in a buffer expressed in percentage."
-(interactive "nPercent: ")
-(goto-char (/ (* (point-max) pct) 100)))
-(global-set-key (kbd "C-x p") 'goto-percent)
+
+;(defun goto-percent (pct)
+;"Go to place in a buffer expressed in percentage."
+;(interactive "nPercent: ")
+;(goto-char (/ (* (point-max) pct) 100)))
+;(global-set-key (kbd "C-x p") 'goto-percent)
+
+;; Njan mode
+(get-package 'nyan-mode)
+(setq mode-line-format
+      (list
+       '(:eval (list (nyan-create)))
+       ))
 
 
 (provide 'init-mode-line)

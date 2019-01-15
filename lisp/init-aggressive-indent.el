@@ -2,9 +2,10 @@
 
 (add-hook 'emacs-lisp-mode-hook #'aggressive-indent-mode)
 
-;; turned on for every language except html
+;; turned on for every language except html and haskell
 (global-aggressive-indent-mode 1)
 (add-to-list 'aggressive-indent-excluded-modes 'html-mode)
+(add-to-list 'aggressive-indent-excluded-modes 'haskell-mode)
 
 ;; disable annoying jump lines jump around in c++-mode
 (add-to-list

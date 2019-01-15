@@ -48,12 +48,11 @@
 
 
 (get-package 'use-package)
+;(require 'benchmark) ;; for benchmarking package initialization time
 (require 'init-async)
 
 
-
-;; few commands are bound to the counsel package
-; if not installed, commands like find file or swiper will not work 
+;; few commands are bound to the counsel package - e.g. find-file..
 (get-package 'counsel)
 
 ;;; curstom packages
@@ -61,13 +60,10 @@
 ;;other modes
 (global-linum-mode t) ; linenumbers globally
 
-;; PATHS
-; path of haskell-stack
-;replace with your current path
-(add-to-list 'exec-path "/usr/local/Cellar/haskell-stack/1.9.3/bin/")
-;; custom path to pandoc executable - from brew
-;; change to your correct path
-(defvar pandoc-path "/usr/local/Cellar/pandoc/2.5/bin/pandoc")
+
+(defvar pandoc-path "pandoc")
+
+
 
 ;;customization
 (require 'init-doom-themes)

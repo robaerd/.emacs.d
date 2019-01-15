@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>README.html</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+</head>
+
+<body>
+
+<h1 id="emacsconfig">emacsConfig</h1>
+<p>Personal emacs config i decided to craft together beacause all the pre built configs are either really slow and bloated with unnecessary packages or too many packgages are missing.</p>
+<p>This emacs config is properly configured for:</p>
+<ul>
+<li>c/c++/objc</li>
+<li>haskell</li>
+<li>markdown</li>
+</ul>
+<h2 id="todo">TODO:</h2>
+<ul>
+<li>add keybindings description for all major and minor modes</li>
+<li>list all used modes and give brief description about them</li>
+<li>insert photos or gifs about this config in action</li>
+<li>usage of compilation datebase for irony</li>
+</ul>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>irony and irony-server<br/>
+<ul>
+<li>Following packages need to be installed on your system:
+<ul>
+<li>CMake &gt;= 2.8.3</li>
+<li>libclang</li>
+</ul></li>
+<li>To install irony-server and just type this in emacs:<br/></li>
+</ul>
+<pre class="el"><code>     M-x irony-install-server RET.       </code></pre>
+<p></br/></p></li>
+<li><p>stack (for intero - haskell development envirement)</p>
+<p>For many Un*x operating systems, all you need to do is run:</p></li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" title="1">    <span class="ex">curl</span> -sSL https://get.haskellstack.org/ <span class="kw">|</span> <span class="fu">sh</span></a></code></pre></div>
+<ul>
+<li>pandoc (Markdown renderer)</li>
+</ul>
+<h4 id="macos">macOS:</h4>
+<p>The simpliest method to install an keeping pandoc up-to-date is using brew</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1"> $ <span class="ex">brew</span> install pandoc</a>
+<a class="sourceLine" id="cb3-2" title="2"> $ <span class="ex">brew</span> install pandoc-citeproc</a></code></pre></div>
+<h4 id="linux">Linux:</h4>
+<p>Pandoc is in the Debian, Ubuntu, Slackware, Arch, Fedora, NiXOS, openSUSE, and gentoo repositories.</p>
+<pre><code>  On Debian/Ubuntu:
+  ```sh
+  apt-get install pandoc pandoc-citeproc
+  ```
+  On Fedora: 
+   ```sh
+  dnf install pandoc pandoc-citeproc
+  ```
+  </code></pre>
+<h3 id="keybindings">Keybindings</h3>
+<ul>
+<li>C-c C-c l to turn on markdown-live-preview-mode</li>
+</ul>
+
+</body>
+</html>
