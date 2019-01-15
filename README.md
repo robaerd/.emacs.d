@@ -21,7 +21,7 @@ This emacs config is properly configured for:
 	 * libclang
    * To install irony-server and just type this in emacs:<br/>
 ~~~el
-		M-x irony-install-server RET.		
+M-x irony-install-server RET.		
 ~~~
 </br/>
 
@@ -31,7 +31,7 @@ This emacs config is properly configured for:
 	For many Un*x operating systems, all you need to do is run:
 
 ``` sh
-	curl -sSL https://get.haskellstack.org/ | sh
+curl -sSL https://get.haskellstack.org/ | sh
 ```
 - pandoc (Markdown renderer)
 
@@ -45,14 +45,14 @@ This emacs config is properly configured for:
 #### Linux:
   Pandoc is in the Debian, Ubuntu, Slackware, Arch, Fedora, NiXOS, openSUSE, and gentoo repositories.
   
-	  On Debian/Ubuntu:
-	  ```sh
-	  apt-get install pandoc pandoc-citeproc
-	  ```
-	  On Fedora: 
-	   ```sh
-	  dnf install pandoc pandoc-citeproc
-	  ```
+On Debian/Ubuntu: 
+```sh
+$ apt-get install pandoc pandoc-citeproc
+```
+On Fedora: 
+```sh
+$ dnf install pandoc pandoc-citeproc
+```
 	  
 ### Keybindings
 
