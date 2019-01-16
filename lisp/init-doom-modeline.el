@@ -38,7 +38,7 @@
 (setq doom-modeline-buffer-file-name-style 'truncate-upto-project)
 
 ;; What executable of Python will be used (if nil nothing will be showed).
-(setq doom-modeline-python-executable "python")
+(setq doom-modeline-python-executable nil)
 
 ;; Whether show `all-the-icons' or not (if nil nothing will be showed).
 ;; The icons may not be showed correctly on Windows. Disable to make it work.
@@ -63,7 +63,8 @@
 (setq doom-modeline-github nil)
 
 ;; The interval of checking github.
-(setq doom-modeline-github-interval (* 30 60))
+;;; comment in if you decide to use the feature above
+;(setq doom-modeline-github-interval (* 30 60))
 
 
 

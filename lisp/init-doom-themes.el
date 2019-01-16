@@ -19,7 +19,6 @@
 ;; Corrects (and improves) org-mode's native fontification.
 (doom-themes-org-config)
 
-
 ;;org mode bug preventing
 (let ((height (face-attribute 'default :height)))
   ;; for all linum/nlinum users

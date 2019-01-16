@@ -63,9 +63,10 @@
 
 (defvar pandoc-path "pandoc")
 
-
+(setq auto-window-vscroll nil) ;; a try to improve cursor performance
 
 ;;customization
+
 (require 'init-doom-themes)
 (require 'init-doom-modeline)
 
@@ -83,11 +84,13 @@
 (require 'init-smartparens)
 (require 'init-ibuffer)
 (require 'init-windows)
-(require 'init-helm)
+;(require 'init-helm)
 (require 'init-avy)
 (require 'init-aggressive-indent)
 
 ;; some small features
+;(require 'init-dashboard)
+(require 'init-dashboard)
 (require 'init-google)
 (require 'init-terminal)
 (require 'init-sudo-edit)
