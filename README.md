@@ -55,4 +55,6 @@ $ dnf install pandoc pandoc-citeproc
 ### Keybindings
 
 - C-c C-c l to turn on markdown-live-preview-mode
+- M-up move line/region up
+- M-down move line/region down
 

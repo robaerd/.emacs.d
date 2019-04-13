@@ -98,6 +98,7 @@
 (require 'init-delete-current-buffer-file)
 (require 'init-mode-line)
 (require 'init-undotree)
+(require 'init-move-text)
 
 
 
@@ -105,7 +106,7 @@
 
 
 
-;----------------------------------------------------------------------------------------
+										;----------------------------------------------------------------------------------------
 
 
 ;; Variables configured via the interactive 'customize' interface
