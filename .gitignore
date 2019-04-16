@@ -70,3 +70,6 @@ ede-projects.el
 spotify/
 config-spotify.el
 
+# undo tree history
+transient/
+

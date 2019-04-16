@@ -11,7 +11,7 @@ This emacs config is properly configured for:
 - add keybindings description for all major and minor modes
 - list all used modes and give brief description about them
 - insert photos or gifs about this config in action
-- usage of compilation datebase for irony
+- usage of compilation database for irony
 
 
 ## Requirements
@@ -52,9 +52,55 @@ On Fedora:
 $ dnf install pandoc pandoc-citeproc
 ```
 	  
-### Keybindings
+## Keybindings
+### Text Navigation
+#### Avy
+- M-s Input one char, jump to it with a tree
+- C-' Input two chars, jump to it with a tree
+#### Swiper/Counsel
+- C-s Search in current buffer
+- C-x C-f Find file
+- M-x 
+- C-c g Git
+- C-c j Git grep
+- C-c k Counsel 
+- C-c C-r ivy resume
+#### Projectile (Project interaction tool)
+- S-d Find directory in project 
+- S-f Find file in project
+- S-g Grep in whole project
+- S-p Switch project
 
+### Markdown
 - C-c C-c l to turn on markdown-live-preview-mode
-- M-up move line/region up
-- M-down move line/region down
+- C-c C-c v to export and preview
+- C-c C-c p to only preview
+- C-c C-C e to only exportin
 
+### Buffer 
+- C-x C-k Delete file opened currently in buffer
+- C-x b   Switch to buffer
+- C-x C-b Open iBuffer
+- C-x | Split window horizontally instead
+- C- \_ Split window vertically instead
+### Editing
+- C-x u Undo Tree
+- C-z Undo
+- C-`Shift`-z
+- M-`up` Move line or active region up
+- M-`down` Move line or active region down
+- C-x C-r Edit current file as root
+- C-c w Show all whitespace characters
+
+### Windows
+- C-x o Switch window
+- C-x 1 Focus on current window (Deletes other windows | Restore other windows)
+- C-x 2 Split window vertically
+- C-x 3 split window horizontally
+- F7 split window
+- `Shift`- `up/down/right/left` move to windows up/down/right/left 
+
+### Small extra features"
+- C-x g Google search
+- C-c t Open a terminal buffer
+- C-x c Show word count
