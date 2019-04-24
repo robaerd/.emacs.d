@@ -3,14 +3,12 @@
   :config
   (dashboard-setup-startup-hook))
 
-(setq initial-buffer-choice (lambda () (get-buffer "*dashboard*")))
-
 
 dashboard-banners-directory
 
 
-  ;; Set the title
-;(setq dashboard-banner-logo-title "sfasdfasd")
+;; Set the title
+										;(setq dashboard-banner-logo-title "sfasdfasd")
 ;; Set the banner
 (setq dashboard-startup-banner nil)
 ;; Value can be

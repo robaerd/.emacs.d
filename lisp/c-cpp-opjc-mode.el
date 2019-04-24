@@ -13,15 +13,15 @@
   ;; replace the `completion-at-point' and `complete-symbol' bindings in
   ;; irony-mode's buffers by irony-mode's function
   (defun my-irony-mode-hook ()
-    (define-key irony-mode-map [remap completion-at-point] 
+    (define-key irony-mode-map [remap completion-at-point]
       'counsel-irony)
-    (define-key irony-mode-map [remap complete-symbol] 
+    (define-key irony-mode-map [remap complete-symbol]
       'counsel-irony))
-    (add-hook 'irony-mode-hook 'my-irony-mode-hook)
-    (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
-  ; trigger completion at interesting places, such as after scope operator
-  ;     std::|
-    (add-hook 'irony-mode-hook 'company-irony-setup-begin-commands)
+  (add-hook 'irony-mode-hook 'my-irony-mode-hook)
+  (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
+										; trigger completion at interesting places, such as after scope operator
+										;     std::|
+  (add-hook 'irony-mode-hook 'company-irony-setup-begin-commands)
   )
 
 ;; == company-mode ==
@@ -32,29 +32,25 @@
   :config
   (use-package company-irony :ensure t :defer t)
   (setq company-idle-delay              t
-	company-minimum-prefix-length   2
-	company-show-numbers            t
-	company-tooltip-limit           20
-	company-dabbrev-downcase        nil
-	company-backends                '((company-irony company-gtags))
-	)
+		company-minimum-prefix-length   2
+		company-show-numbers            t
+		company-tooltip-limit           20
+		company-dabbrev-downcase        nil
+		company-backends                '((company-irony company-gtags))
+		)
   :bind ("C-;" . company-complete-common)
   )
 
 ;; == flycheck-mode ==
 (use-package flycheck-irony
-	:ensure t
-	:defer t
-	:init 
-	(add-hook 'c++-mode-hook 'flycheck-mode)
-	(add-hook 'c-mode-hook 'flycheck-mode)
-	:config
-	(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
+  :ensure t
+  :defer t
+  :init
+  (add-hook 'c++-mode-hook 'flycheck-mode)
+  (add-hook 'c-mode-hook 'flycheck-mode)
+  :config
+  (add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
 
-;(add-hook 'c++-mode-hook 'flycheck-mode)
-;(add-hook 'c-mode-hook 'flycheck-mode)
-;(eval-after-load 'flycheck
-;  '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
 
 
 ;; == eldoc-mode ==
