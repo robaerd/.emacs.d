@@ -72,6 +72,7 @@
 
 ;; language modes
 (require 'init-markdown-mode)
+(require 'init-jenkinsfile)
 
 ;;important features
 (require 'init-swiper)
@@ -100,6 +101,7 @@
 (require 'init-mode-line)
 (require 'init-undotree)
 (require 'init-move-text)
+(require 'init-diff-hl)
 
 
 
