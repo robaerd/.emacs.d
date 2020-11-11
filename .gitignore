@@ -73,3 +73,5 @@ config-spotify.el
 # undo tree history
 transient/
 
+# url cache
+url/

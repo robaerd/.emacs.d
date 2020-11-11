@@ -1,10 +1,10 @@
-(unless (package-installed-p 'doom-modeline)
-    (all-the-icons-install-fonts t))
-
 (use-package all-the-icons-ivy
   :ensure t
   :config
   (all-the-icons-ivy-setup))
+
+(unless (package-installed-p 'doom-modeline)
+    (all-the-icons-install-fonts t))
 
 (get-package 'doom-modeline)
 (doom-modeline-init)
